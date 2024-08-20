@@ -1,6 +1,6 @@
 const greeting = document.getElementById("greeting");
 const time = document.getElementById("time");
-const hour = new Date().getHours();
+const hour = new Date().getHours().toString().padStart(2, "0");
 const minute = new Date().getMinutes().toString().padStart(2, "0");
 
 time.innerHTML = `${hour}:${minute}`;
